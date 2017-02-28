@@ -9,7 +9,7 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
 				"POD 1":{
 					"Site pod name Name"	=	"<pod name>"
 					"TEP ip-scope"			=	<"x.y.z.w>"
-						"Comment : TEP IP-Scope	a /16 that not can be reused in any of the other pods"
+						" Comment : TEP IP-Scope	a /16 that not can be reused in any of the other pods"
 				}
 				"POD 2":{
 					"Site pod name Name"	=	"<pod name>"
