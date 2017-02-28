@@ -9,7 +9,7 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
 				"POD 1":{
 					"Site pod name Name"	=	"<pod name>"
 					"TEP ip-scope"			=	<"x.y.z.w>"
-					"Comment : TEP IP-Scope	a /16 that not can be reused in any of the other pods"
+						"Comment : TEP IP-Scope	a /16 that not can be reused in any of the other pods"
 				}
 				"POD 2":{
 					"Site pod name Name"	=	"<pod name>"
@@ -18,14 +18,17 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
 				}
 				"POD 3":{
 					"Site pod name Name"	=	"<pod name>"
+						"Comment : Left empty if pod due not exist"
 					"TEP ip-scope"			=	<"x.y.z.w>"
 				}
 				"POD 4":{
 					"Site pod name Name"	=	"<pod name>"
+						"Comment : Left empty if pod due not exist"
 					"TEP ip-scope"			=	<"x.y.z.w>"
 				}
 				"POD 5":{
 					"Site pod name Name"	=	"<pod name>"
+						"Comment : Left empty if pod due not exist"
 					"TEP ip-scope"			=	<"x.y.z.w>"
 				}
 			}
@@ -37,6 +40,7 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
     			}
     			"server 2": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
+						"Comment : Left empty if server due not exist"
     			}
     			}
     	}
@@ -44,8 +48,11 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
 			"Domain-name":{
 				"Domain-name 1" = "<nane1>"
 				"Domain-name 2" = "<nane2>"
+					"Comment : Left empty if domain due not exist"
 				"Domain-name 3" = "<nane3>"
+					"Comment : Left empty if domain due not exist"
 				"Domain-name 4" = "<nane4>"
+					"Comment : Left empty if domain due not exist"
 			}
 			"Name server ip address"
    		 		"server 1": { 
@@ -53,9 +60,11 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
     			}
     			"server 2": { 
       				"ip-addess/ipv6-address" = "<x.y.z.w>/<x:y:z::w>"
+						"Comment : Left empty if server due not exist"
     			}
     			"server 2": { 
       				"ip-addess/ipv6-address" = "<x.y.z.w>/<x:y:z::w>"
+						"Comment : Left empty if server due not exist"
     			}
     	}
     	
