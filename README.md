@@ -1,5 +1,7 @@
-#aci-fabric-setup
-A python tool to set basic ACI fabric parameters according to a configuration file with the below format:	 											Configuraion file:
+#aci-fabric-setup version 0.01
+A python tool to set basic ACI fabric parameters according to a configuration file with the below format:##script input paramenters
+
+aci-fabric-setup <apic-url> <user-id> <password> <configuration file>##ACI fabric parameters is set according to a configuration file with the below format:						Configuraion file:
 
 	{"aci fabric setup": {
 		"Fabric date":{
@@ -126,6 +128,13 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
 					"Key"	= "<tacacs key>"
     			}
     			}
+		"VM-Ware": {
+   		 		"vmware connecter 1": { 
+      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
+					"VMware Domain name"	=	"<vmware domain name>"
+					"VMware Datacenter name"	=	"<vmware datacenter name>"
+					"Key"	= "<vmware key>"
+    			}
     	
     }}	
-									 												VM-WARE													VMware Domain name 1	VMware Domain name 2	VMware Domain name 3	VMware Domain name 4																					vCenter IP  1   	vCenter IP 2      	vCenter IP  3 	vCenter IP  4   																					Datacenter Name 1	Datacenter Name 2	Datacenter Name 3	Datacenter Name 4																				
+
