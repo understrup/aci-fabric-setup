@@ -4,19 +4,19 @@ A python tool to set basic ACI fabric parameters according to a configuration fi
 	{"aci fabric setup": {
 		"ntp": {
     		"server 1": { 
-      			"ip-addess"="<x.y.z.w>"
-      			"ipv6-address": "<x:y:z::w>"
-      			"dns-name": "<dns-name>"
+      			"ip-addess"		=	"<x.y.z.w>"
+      			"ipv6-address"	= 	"<x:y:z::w>"
+      			"dns-name"		= 	"<dns-name>"
     		}
     		"server 2": { 
-      			"ip-addess"="<x.y.z.w>"
-      			"ipv6-address": "<x:y:z::w>"
-      			"dns-name": "<dns-name>"
+      			"ip-addess"		=	"<x.y.z.w>"
+      			"ipv6-address"	=	"<x:y:z::w>"
+      			"dns-name"		= 	"<dns-name>"
     		}
     		"server 2": { 
-      			"ip-addess"="<x.y.z.w>"
-      			"ipv6-address": "<x:y:z::w>"
-      			"dns-name": "<dns-name>"
+      			"ip-addess"		=	"<x.y.z.w>"
+      			"ipv6-address"	= 	"<x:y:z::w>"
+      			"dns-name"		= 	"<dns-name>"
     		}
     	}
     	
