@@ -1,7 +1,8 @@
 #aci-fabric-setup version 0.01
 A python tool to set basic ACI fabric parameters according to a configuration file with the below format:##script input paramenters
 
-aci-fabric-setup <apic-url> <user-id> <password> <configuration file>##ACI fabric parameters is set according to a configuration file with the below format:						Configuraion file:
+###aci-fabric-setup \<apic-url> \<user-id> \<password> \<configuration file>##ACI fabric parameters is set according to a configuration file with the below format:
+###Configuraion file:
 
 	{"aci fabric setup": {
 		"Fabric date":{
