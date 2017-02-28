@@ -2,18 +2,26 @@
 A python tool to set basic ACI fabric parameters according to a configuration file with the below format:	 											Configuraion file:
 
 	{"aci fabric setup": {
-		"id": "file",
-		value": "File",
 		"ntp": {
     		"server 1": { 
-      			{"ip-addess": "x.y.z.w"},
-      			{"ipv6-address": "x:y:z::w"},
-      			{"dns-name": "<dns-name>"}
-    		]
+      			"ip-addess"="<x.y.z.w>"
+      			"ipv6-address": "<x:y:z::w>"
+      			"dns-name": "<dns-name>"
+    		}
+    		"server 2": { 
+      			"ip-addess"="<x.y.z.w>"
+      			"ipv6-address": "<x:y:z::w>"
+      			"dns-name": "<dns-name>"
+    		}
+    		"server 2": { 
+      			"ip-addess"="<x.y.z.w>"
+      			"ipv6-address": "<x:y:z::w>"
+      			"dns-name": "<dns-name>"
+    		}
     	}
+    	
     }}	
-
-NTP 													ip-address   ipv6-address   dns-name	ip-address   ipv6-address   dns-name																																		DNS													domain-name	domain-name	domain-name	domain-name																																NAME server ip address													ip-address   ipv6-address   dns-name	
+																								DNS													domain-name	domain-name	domain-name	domain-name																																NAME server ip address													ip-address   ipv6-address   dns-name	
 	ip-address   ipv6-address   dns-name
 		ip-address   ipv6-address   dns-name	
 	ip-address   ipv6-address   dns-name								 												 												SNMP									 			 	ip-address   ipv6-address   dns-name	ip-address   ipv6-address   dns-name	ip-address   ipv6-address   dns-name	ip-address   ipv6-address   dns-name	Trap-destination																			 	Version	Version	Version	Version								 												 	Community	Community	Community	Community								 												 												 	ip-address   ipv6-address   	ip-address   ipv6-address   	ip-address   ipv6-address   	ip-address   ipv6-address   	Server address							 												 	Version	Version	Version	Version																					Community	Community	Community	Community																																Syslog													ip-address   ipv6-address   	ip-address   ipv6-address   	ip-address   ipv6-address   	ip-address   ipv6-address   																					Level	Level	Level	Level																																Tacacs													ip-address   ipv6-address   dns-name	ip-address   ipv6-address   dns-name																							tacacs key	tacacs key																																		VM-WARE													VMware Domain name 1	VMware Domain name 2	VMware Domain name 3	VMware Domain name 4																					vCenter IP  1   	vCenter IP 2      	vCenter IP  3 	vCenter IP  4   																					Datacenter Name 1	Datacenter Name 2	Datacenter Name 3	Datacenter Name 4																				
