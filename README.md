@@ -6,35 +6,15 @@ A python tool to set basic ACI fabric parameters.##Tool input paramenters
 
 	{"aci fabric setup": {
 		"Fabric date":{
-		   "Infrastructure VLAN ID" = <vlan-id>
+		   "Infrastructure VLAN ID" = "<vlan-id>"
 		   "Comment : a vlan only used in the fabric)" 
 			"PODS":{
-				"POD 1":{
+				"POD":{
+                "POD no"                =   "<1-12>"
 					"Site pod name Name"	=	"<pod name>"
 					"TEP ip-scope"			=	<"x.y.z.w>"
 						" Comment : TEP IP-Scope	a /16 that not can be reused in any of the other pods"
-				}
-				"POD 2":{
-					"Site pod name Name"	=	"<pod name>"
-					"Comment : Left empty if pod due not exist"
-					"TEP ip-scope"			=	<"x.y.z.w>"
-				}
-				"POD 3":{
-					"Site pod name Name"	=	"<pod name>"
-						"Comment : Left empty if pod due not exist"
-					"TEP ip-scope"			=	<"x.y.z.w>"
-				}
-				"POD 4":{
-					"Site pod name Name"	=	"<pod name>"
-						"Comment : Left empty if pod due not exist"
-					"TEP ip-scope"			=	<"x.y.z.w>"
-				}
-				"POD 5":{
-					"Site pod name Name"	=	"<pod name>"
-						"Comment : Left empty if pod due not exist"
-					"TEP ip-scope"			=	<"x.y.z.w>"
-				}
-			}
+				} : " Comment : TEP IP-Scope    a /16 that not can be reused in any of the other pods"
 		}
 		"ntp": {
 			"Network Time Protocol"
