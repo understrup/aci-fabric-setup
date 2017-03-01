@@ -18,97 +18,45 @@ A python tool to set basic ACI fabric parameters.##Tool input paramenters
 		}
 		"ntp": {
 			"Network Time Protocol"
-   		 		"server 1": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-    			}
-    			"server 2": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if server due not exist"
-    			}
-    			}
+   		 		"server": { 
+      				"ip-addess/ipv6-address/dns-name" 	= "<x.y.z.w>/<x:y:z::w>/dns-name"
+               	"primary ntp server"                	= "<prefed>"
+   		      	} : "A server section is added per ntp server"
+     		}
+     	}
 		"DNS": {
 			"Domain-name":{
-				"Domain-name 1" = "<nane1>"
-				"Domain-name 2" = "<nane2>"
-					"Comment : Left empty if domain due not exist"
-				"Domain-name 3" = "<nane3>"
-					"Comment : Left empty if domain due not exist"
-				"Domain-name 4" = "<nane4>"
-					"Comment : Left empty if domain due not exist"
-			}
+				"Domain-name" = "<domain nane>"
+			} : "A domain-name section is added per domain name"
 			"Name server ip address"
-   		 		"server 1": { 
+   		 		"server": { 
       				"ip-addess/ipv6-address" = "<x.y.z.w>/<x:y:z::w>"
-    			}
-    			"server 2": { 
-      				"ip-addess/ipv6-address" = "<x.y.z.w>/<x:y:z::w>"
-						"Comment : Left empty if server due not exist"
-    			}
-    			"server 2": { 
-      				"ip-addess/ipv6-address" = "<x.y.z.w>/<x:y:z::w>"
-						"Comment : Left empty if server due not exist"
-    			}
+    			} : "A server section is added per DNS server"
     	}
 		"SNMP": {
 			"Simple Network Management Protocol"
-   		 		"server 1": { 
+   		 		"server": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
     			}
-    			"server 2": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if server due not exist"
-    			}
-    			"server 3": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if server due not exist"
-    			}
-    		}
+    		} : "A server section is added per snmp server"
 			"Trap destination"
-    			"Destination 1": { 
+    			"Destination": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
 						"Comment : Left empty if Destination due not exist"
 					"Version"						= "<2c/3>"
 					"Community"						= "<Commnuity name>"
-    			}
-    			"Destination 2": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if Destination due not exist"
-					"Version"						= "<2c/3>"
-					"Community"						= "<Commnuity name>"
-    			}
-    			"Destination 3": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if Destination due not exist"
-					"Version"						= "<2c/3>"
-					"Community"						= "<Commnuity name>"
-    			}
+    			} : "A server section is added per trap destination"
 		"Syslog": {
-   		 		"server 1": { 
+   		 		"server": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
 					"Level"	= "<0-7>"
-    			}
-    			"server 2": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if server due not exist"
-					"Level"	= "<0-7>"
-    			}
-    			}
-    			"server 3": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if server due not exist"
-					"Level"	= "<0-7>"
-    			}
+    			} : "A server section is added per syslog server"
 		"Tacacs": {
-   		 		"server 1": { 
+   		 		"server": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
 					"Key"	= "<tacacs key>"
-    			}
-    			"server 2": { 
-      				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-						"Comment : Left empty if server due not exist"
-					"Key"	= "<tacacs key>"
-    			}
-    			}
+    			} : "A server section is added per Tacacs server"
+   		} 
 		"VM-Ware": {
    		 		"vmware connecter 1": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
