@@ -2,20 +2,40 @@
 A tool to configure basic ACI fabric parameters like NTP, DNS, SNMP, SYSLOG, TACACS and VMware connecter.
 ##Tool input paramenters
 
-###aci-fabric-setup \<apic-url> \<user-id> \<password> \<configuration file>##ACI fabric parameters is set according to a configuration file with the below format:
+###aci-fabric-setup \<apic-url> \<user-id> \<password> \<configuration file>##Python imports
+import argparse
+
+import os##ACI fabric parameters is set according to a configuration file with the below format:
 ###Configuraion file:
 
-	{"aci fabric setup": {
-		"Fabric date": {
+	{"aci fabric setup" : {
+		"Fabric date" : {
 		   "Infrastructure VLAN ID" = "<vlan-id>"
 		   		"Comment : a vlan only used in the fabric)" 
 			"PODS" : {
 				"POD" : {
-                "POD no"					= "<1-12>"
-					"Site pod name Name"	= "<pod name>"
-					"TEP ip-scope"			= <"x.y.z.w>"
+					"POD-No"			= "<1-12>"
+					"POD-Name"		= "<pod name>"
+					"TEP-ip-scope"	= <"x.y.z.w>"
 						" Comment : TEP IP-Scope a /16 that not can be reused in any of the other pods"
+				"Multipod-IPN-OOB"
+					"IPN01-ip-addess/ipv6-address" = "<x.y.z.w/q>/<x:y:z::w/q>"
+					"IPN02-ip-addess/ipv6-address" = "<x.y.z.w/q>/<x:y:z::w/q>"
+					"IPN01-to-spine1-interface" = "<interface nane ex, e1/12>"
+					"IPN01-to-spine2-interface" = "<interface nane ex, e1/12>"
+					"IPN02-to-spine1-interface" = "<interface nane ex, e1/12>"
+					"IPN02-to-spine2-interface" = "<interface nane ex, e1/12>"
 				} 
+			}
+			"Multipod" :	{
+				"capacity-between-pods" 
+					"1-1"	:	<"capacity per link same internal link speed in all pods">
+					"1-2"	:	<"capacity per link">
+					"1-3"	:	<"capacity per link">
+					"1-4"	:	<"capacity per link">
+					"2-3"	:	<"capacity per link">
+					"2-4"	:	<"capacity per link">
+					"3-4"	:	<"capacity per link">
 			}
 		}
 		"ntp": {
