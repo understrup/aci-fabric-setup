@@ -84,15 +84,15 @@ import os##ACI fabric parameters is set according to a configuration file with
 				"Comment : if all aci-uplink ports on a leafs is down all down-links ports are closed."
 			"Mode"	= "<enable/disable>"
 		}
-		"EP_loop_protection":	{
+		"EP_loop_protection" : {
 				"Comment : In cause for an end-point loop the interface is closed.."
 			"Mode"	= "<enable/disable>"
 		}
-		"Error_Disabled_Recovery_Policy"	:		{
+		"Error_Disabled_Recovery_Policy"	: {
 				"Comment : The error disabled recovery policy specifies the policy for re-enabling a port that was disabled due to one or more pre-defined error conditions."
 			"Mode"	= "<enable/disable>"
 		}
- 		"APIC_QoS_Preservation"	 :	{
+ 		"APIC_QoS_Preservation"	 : {
 				"Comment : The ACI fabric is an 802.1p-COS based and the interpod-network ip network are based on RFC4594. Enable marks 802.1p to DCSP arcording to RFC4594"
 			"Mode"	= "<enable/disable>"
 		}	
