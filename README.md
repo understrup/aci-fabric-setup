@@ -21,7 +21,7 @@ import os##ACI fabric parameters is set according to a configuration file with
 					"Multipod-IPN" : {
 						"OOB-IPN01-ip-addess/ipv6-address"	= "<x.y.z.w/q>/<x:y:z::w/q>"
 						"OOB-IPN02-ip-addess/ipv6-address"	= "<x.y.z.w/q>/<x:y:z::w/q>"
-						"IPN0x-to-spine1-interface"			= "<interface nane ex, e1/12>"
+						"IPN0x-to-spine1-interface			= "<interface nane ex, e1/12>"
 						"IPN0x-to-spine2-interface"			= "<interface nane ex, e1/12>"
 					} 
 				} : Above line is repeated per pod-to-pod links"
@@ -89,11 +89,13 @@ import os##ACI fabric parameters is set according to a configuration file with
 			"Mode"	= "<enable/disable>"
 		}
 		"Error_Disabled_Recovery_Policy"	: {
-				"Comment : The error disabled recovery policy specifies the policy for re-enabling a port that was disabled due to one or more pre-defined error conditions."
+				"Comment : 	The error disabled recovery policy specifies the policy for re-enabling"
+				"			a port that was disabled due to one or more pre-defined error conditions."
 			"Mode"	= "<enable/disable>"
 		}
  		"APIC_QoS_Preservation"	 : {
-				"Comment : The ACI fabric is an 802.1p-COS based and the interpod-network ip network are based on RFC4594. Enable marks 802.1p to DCSP arcording to RFC4594"
+				"Comment :	The ACI fabric is an 802.1p-COS based and the interpod-network ip network"
+				"			are based on RFC4594. Enable marks 802.1p to DCSP arcording to RFC4594"
 			"Mode"	= "<enable/disable>"
 		}	
 		"VM-Ware": {
