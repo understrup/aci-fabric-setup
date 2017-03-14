@@ -29,7 +29,8 @@ import os##ACI fabric parameters is set according to a configuration file with
 			"Multipod" :	{
 			  	"mulitipod-as-number" = "<as-number>" 
 				"capacity-between-pods" : { 
-					<"Pod-x"> = <"Pod-y"> = <"capacity per link same internal link speed in all pods">					"<x>"	=	"<y>" = <"capacity per link">
+					<"Pod-x"> = <"Pod-y"> = <"capacity per link same internal link speed in all pods">
+						"<x>"	=	"<y>"	= 	<"capacity per link">
 						"Above line is repeated per pod-to-pod links"
 				} "Comment : Delete above line if multipod is not used"
 			}
@@ -72,6 +73,29 @@ import os##ACI fabric parameters is set according to a configuration file with
 					"Key"								= "<tacacs key>"
     		} : "A server section is added per Tacacs server"
     	} 
+		"MCP":	{
+			"Comment :  Mis-Cabling Protocol" 
+			"MCP"			= "<enable/disable>"
+			"Key"			= "<text string>"
+				"Comment : The key or password to uniquely identify the MCP packets within this fabric."
+			 "MCP_per_vlan"	= "<enable/disable>"
+		}
+		"Port_Tracking":	{
+				"Comment : if all aci-uplink ports on a leafs is down all down-links ports are closed."
+			"Mode"	= "<enable/disable>"
+		}
+		"EP_loop_protection":	{
+				"Comment : In cause for an end-point loop the interface is closed.."
+			"Mode"	= "<enable/disable>"
+		}
+		"Error_Disabled_Recovery_Policy"	:		{
+				"Comment : The error disabled recovery policy specifies the policy for re-enabling a port that was disabled due to one or more pre-defined error conditions."
+			"Mode"	= "<enable/disable>"
+		}
+ 		"APIC_QoS_Preservation"	 :	{
+				"Comment : The ACI fabric is an 802.1p-COS based and the interpod-network ip network are based on RFC4594. Enable marks 802.1p to DCSP arcording to RFC4594"
+			"Mode"	= "<enable/disable>"
+		}	
 		"VM-Ware": {
 			"vmware connecter": { 
       				"ip-addess/ipv6-address/dns-name"	= "<x.y.z.w>/<x:y:z::w>/dns-name"
@@ -81,4 +105,5 @@ import os##ACI fabric parameters is set according to a configuration file with
     		}
     	}
     }	
+
 
