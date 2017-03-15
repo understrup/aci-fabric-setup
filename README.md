@@ -29,8 +29,8 @@ import os##ACI fabric parameters is set according to a configuration file with
 			"Multipod" :	{
 			  	"mulitipod-as-number"	=	"<as-number>" 
 				"capacity-between-pods" : { 
-					<"Pod-x"> = <"Pod-y">	= <"capacity per link same internal link speed in all pods">
-						"<x>" = "<y>" = <"capacity per link">
+					<"Pod-x">	= <"Pod-y">	= <"capacity per link same internal link speed in all pods">
+					"<x>" = "<y>" = <"capacity per link">
 						"Above line is repeated per pod-to-pod links"
 				} "Comment : Delete above line if multipod is not used"
 			}
@@ -101,7 +101,7 @@ import os##ACI fabric parameters is set according to a configuration file with
 		"VM-Ware": {
 			"vmware connecter": { 
       				"ip-addess/ipv6-address/dns-name" = "<x.y.z.w>/<x:y:z::w>/dns-name"
-					"VMware Domain name"				= "<vmware domain name>"
+					"VMware Domain name" = "<vmware domain name>"
 					"VMware Datacenter name" = "<vmware datacenter name>"
 					"Key" = "<vmware key>"
     		}
