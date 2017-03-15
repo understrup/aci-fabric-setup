@@ -14,22 +14,22 @@ import os##ACI fabric parameters is set according to a configuration file with
 		   	"Internal-fabric-as-number" = "<as-number>" 
 			"PODS" : {
 				"POD" : {
-					"POD-No"	=	"<1-12>"
-					"POD-Name"	=	"<pod name>"
-					"TEP-ip-scope"	=	"<x.y.z.w>"
+					"POD-No" = "<1-12>"
+					"POD-Name" = "<pod name>"
+					"TEP-ip-scope" = "<x.y.z.w>"
 						"Comment : TEP IP-Scope a /16 that not can be reused in any of the other pods"
 					"Multipod-IPN" : {
-						"OOB-IPN01-ip-addess/ipv6-address"	=	"<x.y.z.w/q>/<x:y:z::w/q>"
-						"OOB-IPN02-ip-addess/ipv6-address"	=	"<x.y.z.w/q>/<x:y:z::w/q>"
-						"IPN0x-to-spine1-interface"	=	"<interface nane ex, e1/12>"
-						"IPN0x-to-spine2-interface"	=	"<interface nane ex, e1/12>"
+						"OOB-IPN01-ip-addess/ipv6-address" = "<x.y.z.w/q>/<x:y:z::w/q>"
+						"OOB-IPN02-ip-addess/ipv6-address" = "<x.y.z.w/q>/<x:y:z::w/q>"
+						"IPN0x-to-spine1-interface" = "<interface nane ex, e1/12>"
+						"IPN0x-to-spine2-interface" = "<interface nane ex, e1/12>"
 					} 
 				} : Above line is repeated per pod-to-pod links"
 			}
 			"Multipod" :	{
-			  	"mulitipod-as-number"	=	"<as-number>" 
+			  	"mulitipod-as-number" = "<as-number>" 
 				"capacity-between-pods" : { 
-					<"Pod-x">	= <"Pod-y">	= <"capacity per link same internal link speed in all pods">
+					<"Pod-x">	= <"Pod-y"> = <"capacity per link same internal link speed in all pods">
 					"<x>" = "<y>" = <"capacity per link">
 						"Above line is repeated per pod-to-pod links"
 				} "Comment : Delete above line if multipod is not used"
