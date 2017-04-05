@@ -12,6 +12,10 @@ import os##ACI fabric parameters is set according to a configuration file with
 		   "Infrastructure VLAN ID" = "<vlan-id>"
 		   		"Comment : a vlan only used in the fabric)"
 		   	"Internal-fabric-as-number" = "<as-number>" 
+		   	"APIC1-IP" = "<x.y.z.w/q>/<x:y:z::w/q>"
+		   	"APIC2-IP" = "<x.y.z.w/q>/<x:y:z::w/q>"
+		   	"APIC3-IP" = "<x.y.z.w/q>/<x:y:z::w/q>"
+		   	"APICStanby-IP" = "<x.y.z.w/q>/<x:y:z::w/q>"
 			"PODS" : {
 				"POD" : {
 					"POD-No" = "<1-12>"
